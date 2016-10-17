@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D21769F2-D7A6-4CEF-A94E-F0367255E538}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCSnake</RootNamespace>
+    <AssemblyName>CCSnake</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Snake_TempKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Body.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="ImageBody.cs" />
+    <Compile Include="ImageFood.cs" />
+    <Compile Include="ImageSnake.cs" />
+    <Compile Include="MainFormGameController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormGameController.Designer.cs">
+      <DependentUpon>MainFormGameController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="PointStruct.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snake.cs" />
+    <Compile Include="View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainFormGameController.resx">
+      <DependentUpon>MainFormGameController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Snake_TempKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnakeMoveLeft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnakeMoveRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnakeMoveDown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnakeMoveUp.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodRed_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodRed_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodRed_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodRed_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodRed_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodyX.bmp" />
+    <None Include="Resources\BodyY.bmp" />
+    <None Include="Resources\btn_PlayPause_1.png" />
+    <None Include="Resources\btn_quick_restart.png" />
+    <Content Include="Resources\FoodBlue_1.bmp" />
+    <Content Include="Resources\FoodBlue_2.bmp" />
+    <Content Include="Resources\FoodBlue_3.bmp" />
+    <Content Include="Resources\FoodBlue_4.bmp" />
+    <Content Include="Resources\FoodBlue_5.bmp" />
+    <Content Include="Resources\FoodYellow_1.bmp" />
+    <Content Include="Resources\FoodYellow_2.bmp" />
+    <Content Include="Resources\FoodYellow_3.bmp" />
+    <Content Include="Resources\FoodYellow_4.bmp" />
+    <Content Include="Resources\FoodYellow_5.bmp" />
+    <None Include="Resources\F_Blue\FoodBlue_5.bmp" />
+    <None Include="Resources\F_Blue\FoodBlue_4.bmp" />
+    <None Include="Resources\F_Blue\FoodBlue_3.bmp" />
+    <None Include="Resources\F_Blue\FoodBlue_2.bmp" />
+    <None Include="Resources\F_Blue\FoodBlue_1.bmp" />
+    <None Include="Resources\F_Yellow\FoodYellow_5.bmp" />
+    <None Include="Resources\F_Yellow\FoodYellow_4.bmp" />
+    <None Include="Resources\F_Yellow\FoodYellow_3.bmp" />
+    <None Include="Resources\F_Yellow\FoodYellow_2.bmp" />
+    <None Include="Resources\F_Yellow\FoodYellow_1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

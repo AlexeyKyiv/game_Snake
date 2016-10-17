@@ -1,0 +1,10 @@
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\bin\Debug\CCSnake.exe.config
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\bin\Debug\CCSnake.exe
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\bin\Debug\CCSnake.pdb
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.MainFormGameController.resources
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.Properties.Resources.resources
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.View.resources
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.csproj.GenerateResource.Cache
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.exe
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.pdb
+D:\D o c u m e n t s\Visual Studio 2013\Projects\CCSnake\CCSnake\obj\Debug\CCSnake.csprojResolveAssemblyReference.cache
